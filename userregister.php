@@ -5,12 +5,17 @@
 <html>
     <head>
         <title>Register - CSED Purchase Manager</title>
-        <link rel="stylesheet" href="./css/user.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/userlogin.css">
     </head>
 
-    <body class="back-graund">
-        <div class="login">
-            <h2 class="text-center">Regidter</h2>
+    <body>
+       <div class="main_div">
+        <div class="box">
+            <h2 class="text-center" style="color:#fff;">Register</h2>
                <br>
                <?php  
                  
@@ -29,18 +34,26 @@
                 <br>
                  <!--Login Form Start  -->
                  <form action="" method="POST" class="text-center">
-                     E-mail: <br>
-                     <input type="text" name="e_mail" placeholder="Enter Username"><br><br>
-                     Password: <br>
-                     <input type="password" name="password" placeholder="Enter Password"><br><br>
-                     CSED ID:<br>
-                     <input type="text" name="csed_id" placeholder="Enter Id/roll number"><br><br>
-                     
-                     <input type="submit" name="Register" value="Register" class="btn-primary">
-                     <br><br>
+                  <div class="inputBox">
+                    <input type="text" name="e_mail" autocomplete="off" required="">
+				            <label>E-Mail</label>
+			            </div>
+                  <div class="inputBox">
+                  <input type="password" name="password" autocomplete="off" required="">
+				            <label>Password</label>
+			            </div>
+                  <div class="inputBox">
+                    <input type="text" name="csed_id" autocomplete="off" required="">
+				            <label>CSED ID</label>
+			            </div>
+            
+                  <input type="submit" name="Register" value="Register" class="btn-primary">
+                  <a href="<?php echo SITEURL; ?>userlogin.php" class="btn btn-primary" role="button">Back</a> 
+                  <br><br>
                  </form>
             <p class="text-center">Created By - <a href="www.mohdnafees.com">Group Number 10</a></p>
         </div>
+      </div> 
     </body>
 </html>
 

@@ -3,5 +3,5 @@
    //1.Destroy The Session
    session_destroy();//unset $_session['user']
    //2.Redirect to Login page
-   header('location:'.SITEURL.'login.php');
+   header('location:'.SITEURL.'userlogin.php');
 ?>
